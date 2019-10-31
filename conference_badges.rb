@@ -13,7 +13,7 @@ end
 def printer (speakers)
   badges = batch_badge_creator (names)
   rooms = assign_rooms (speakers)
-  badges.each {|badge| puts badge}
+  badges.each {|name| puts name}
   rooms.each {|room| puts room}
 end
   
