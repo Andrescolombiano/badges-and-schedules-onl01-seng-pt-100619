@@ -11,9 +11,7 @@ speakers.collect.with_index(1) {|speaker, index|"Hello, #{speaker}! You'll be as
 end
 
 def printer (speakers)
-  batch_badge_creator (names).
-  rooms= assign_rooms (speakers)
-  badges.each {|badge| puts badge}
-  rooms.each {|rooms| puts room}
+  batch_badge_creator (names).each {|badge| puts badge}
+  assign_rooms (speakers).each {|room| puts room}
 end
   
